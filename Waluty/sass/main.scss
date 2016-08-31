@@ -1,0 +1,161 @@
+/*
+
+SASS
+
+*/
+@import "_variables.scss";
+@import "_mixins.scss";
+@import "_maps.scss";
+body,
+html {
+    margin: 0;
+    padding: 0;
+    background: url("http://api.thumbr.it/whitenoise-361x370.png?background=b7bbbdff&noise=626262&density=15&opacity=15");
+}
+#mainCurrencyContainer {
+    width: 100%;
+    min-height: 100vh;
+    @media (min-width: 600px) {
+        width: 600px;
+        margin: auto;
+    }
+    //Style dla headera
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    color: rgb(230,230,230);
+    background: rgba(81,126,78,1);
+    background: -moz-linear-gradient(left, rgba(81,126,78,1) 0%, rgba(12,58,8,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(81,126,78,1)), color-stop(100%, rgba(12,58,8,1)));
+    background: -webkit-linear-gradient(left, rgba(81,126,78,1) 0%, rgba(12,58,8,1) 100%);
+    background: -o-linear-gradient(left, rgba(81,126,78,1) 0%, rgba(12,58,8,1) 100%);
+    background: -ms-linear-gradient(left, rgba(81,126,78,1) 0%, rgba(12,58,8,1) 100%);
+    background: linear-gradient(to right, rgba(81,126,78,1) 0%, rgba(12,58,8,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr= '#517e4e', endColorstr='#0c3a08', GradientType=1 );
+    width: 100%;
+    @media (min-width: 600px) {
+        width: 600px;
+        margin: auto;
+    }
+}
+.header h1 {
+    padding: 0 10px;
+}
+.menuBtn {
+  background: transparent;
+  border: 0;
+}
+.dots {
+  color: rgb(230,230,230);
+  display: block;
+  font-size: 30px;
+  transform:rotate(90deg);
+  letter-spacing: 3px;
+}
+.menu {
+  display: none;
+  font-size: 26px;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  min-height: 100vh;
+  background-color: rgb(100,100,100);
+  @media (min-width: 600px) {
+    width: 200px;
+    float: right;
+    text-align: right;
+  }
+}
+.menu li {
+  list-style-type: none;
+  color: rgb(230,230,230);
+  border-bottom: 1px dotted black;
+  padding: 5px;
+}
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+//Style dla pierwszej sekcji z wyborem i przeliczaniem walut
+.currencyForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section {
+  // display: none;
+    min-height: 100vh;
+    @media (min-width: 600px) {
+        width: 600px;
+        margin: auto;
+    }
+}
+.section label {
+  font-size: 26px;
+  padding: 10px;
+  margin: 10px 0;
+}
+.section select {
+  font-size: 20px;
+}
+.currencyInput {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.currencyInput input {
+  font-size: 26px;
+  line-height:35px;
+}
+.submit {
+  padding: 0 15px;
+  border-radius: 15px;
+  border: 0;
+  margin: 30px 0;
+  background: rgba(81,126,78,1);
+  background: -moz-linear-gradient(left, rgba(81,126,78,1) 0%, rgba(12,58,8,1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(81,126,78,1)), color-stop(100%, rgba(12,58,8,1)));
+  background: -webkit-linear-gradient(left, rgba(81,126,78,1) 0%, rgba(12,58,8,1) 100%);
+  background: -o-linear-gradient(left, rgba(81,126,78,1) 0%, rgba(12,58,8,1) 100%);
+  background: -ms-linear-gradient(left, rgba(81,126,78,1) 0%, rgba(12,58,8,1) 100%);
+  background: linear-gradient(to right, rgba(81,126,78,1) 0%, rgba(12,58,8,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr= '#517e4e', endColorstr='#0c3a08', GradientType=1 );
+}
+.currencyContainer {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  @media (min-width: 600px) {
+      width: 600px;
+      margin: auto;
+      height: 600px;
+  }
+}
+.menuAsside {
+  width: 50%;
+}
+.result li {
+  list-style-type: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+table, th, tr, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 3px;
+  width: 75%;
+  @media (min-width: 600px) {
+      width: 400px;
+      margin: auto;
+  }
+}
+.currencyTable {
+  width: 100%;
+  @media (min-width: 600px) {
+      width: 600px;
+      margin: auto;
+  }
+}

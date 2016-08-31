@@ -1,0 +1,1 @@
+Te pliki oprócz notatnika kopiujemy do folderu z nowym projektem. Nastêpnie w³¹czamy installGulp.bat (instaluje gulpa) w tym projekcie i po instalacji w³¹czamy plik startGulp.bat (w³¹cza gulpa w konsoli). Po wykonaniu tych kroków mo¿emy rozpocz¹æ pracê.

@@ -1,0 +1,68 @@
+/*
+
+SASS
+
+*/
+@import "_variables.scss";
+@import "_mixins.scss";
+@import "_maps.scss";
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('../images/bgFoto.jpg');
+    @media (max-width: 600px) {
+        background-size: cover;
+
+    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container h1 {
+    color: white;
+    margin: 0;
+    padding: 15px;
+}
+.main {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    list-style-type: none;
+    width: 600px;
+    // border: 1px solid black;
+    text-align: center;
+    padding: 0;
+    @media (max-width: 600px) {
+        width: 100%;
+background-color: rgba(0, 0, 0, 0.6);
+    }
+}
+.date {
+    font-size: 26px;
+    padding: 15px;
+}
+.date:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.nameList {
+    display: none;
+    list-style-type: none;
+    font-size: 20px;
+}
+.buttons {
+  width: 600px;
+  display: flex;
+  justify-content: space-around;
+  @media (max-width: 600px) {
+      width: 100%;
+
+  }
+}
+.buttons button {
+  padding: 5px 20px;
+}
