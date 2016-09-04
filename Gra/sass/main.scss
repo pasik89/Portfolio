@@ -1,0 +1,24 @@
+/*
+
+SASS
+
+*/
+@import "_variables.scss";
+@import "_mixins.scss";
+@import "_maps.scss";
+
+.map {
+  width: 600px;
+  height: 600px;
+  background-image: url('../images/FirstMap2.png');
+  position: relative;
+  margin: auto;
+}
+.hero {
+  background-image: url('../images/hero.png');
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top:35px;
+  left: 30px;
+}

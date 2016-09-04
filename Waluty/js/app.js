@@ -42,7 +42,9 @@ const menuBtn = $('.menuBtn'),
     submit = $('.submit'),
     select = $('.currency'),
     select2 = $('.currency2'),
-    result = $('.result');
+    result = $('.result'),
+    tableLi = $('.table'),
+    info = $('.info');
 menuBtn.on('click', function() {
     menu.toggle(200);
 });
@@ -93,4 +95,12 @@ console.log(sum.toFixed(2));
   change.text('Kwota wymieniana:' + ' ' + inputVal + ' ' + currencyFrom)
         stos.text('Przelicznik:' + ' ' + stosunek.toFixed(4))
         changeResult.text('Kwota otrzymana:' + ' ' + sum.toFixed(2) + ' ' + currencyTo);
+});
+tableLi.on('click', function() {
+  $('.currencyTable').show();
+  $('.section').hide();
+});
+$('.calc').on('click', function() {
+  $('.currencyTable').hide();
+  $('.section').show();
 });
